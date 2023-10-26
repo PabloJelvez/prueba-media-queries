@@ -4,12 +4,13 @@
 }
 .body{
     display: grid;
-    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
     grid-template-areas: 
     'menu'
     'main'
     'footer'
     ;
+    height: 100vh;
 }
 .menu{
     grid-area: menu;
@@ -46,7 +47,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 98vw;
         padding: 10px;
     
     select{
@@ -81,12 +82,19 @@
         align-items: center;
         table{
             border-collapse: collapse;
-            width: 40%;
-            margin: auto;
+            width: 200px;
+            color: blue;
+            
             tr{
                 border: solid 1px black;
                 padding: 10px;
                 text-align: center;
+               
+                td{
+                    border: solid 1px black;
+                    width: 50px;
+                    height: 30px
+                };
             }
         }
     }
@@ -100,16 +108,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
     justify-items: center;
+    padding: 20px;
+   
     .iconFooter{
         display: flex;
         align-items: center;
+        padding: 5px;
+       
         i{
-            padding: 10px;
+            padding: 5px;
+            
         }
     }
     .tittleFooter{
         padding: 5px;
+       
     }
 }
