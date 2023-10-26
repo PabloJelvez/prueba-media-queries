@@ -2,3 +2,114 @@
     padding: 0;
     margin: 0;
 }
+.body{
+    display: grid;
+    grid-template-rows: 1fr 10fr 1fr;
+    grid-template-areas: 
+    'menu'
+    'main'
+    'footer'
+    ;
+}
+.menu{
+    grid-area: menu;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    
+    .tittleMenu{
+        display: flex;
+        i{
+            padding: 38px 0 0 30px;
+        }
+        h2{
+            padding: 25px 0 0 10px;
+        }
+       
+       
+    }
+    .iconMenu{
+        display: flex;
+    i{
+        padding: 38px 30px 0 0;
+    }
+    }
+}
+.main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .filters{
+        background-color: lightgrey;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100vw;
+        padding: 10px;
+    
+    select{
+        width: 290px;
+        height: 30px;
+    }
+    
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        .card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: solid 1px lightgray;
+            padding:50px 0 0 0;
+            border-radius: 2px;
+            button{
+                background-color: blue;
+                color: white;
+                width: 80px;
+                height: 30px;
+                margin: 10px;
+            }
+        }
+    }
+    .pagMain{
+        display: flex;
+        align-items: center;
+        table{
+            border-collapse: collapse;
+            width: 40%;
+            margin: auto;
+            tr{
+                border: solid 1px black;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    }
+}
+    
+
+.footer{
+    grid-area: footer;
+    background-color: navy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    justify-items: center;
+    .iconFooter{
+        display: flex;
+        align-items: center;
+        i{
+            padding: 10px;
+        }
+    }
+    .tittleFooter{
+        padding: 5px;
+    }
+}
