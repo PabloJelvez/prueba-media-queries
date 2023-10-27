@@ -4,7 +4,7 @@
     margin: 0;
 }
 $xs: "(max-width: 576px)";
-$lg: "(min-width: 992px)";
+$lg: "(min-width: 576px)";
 .body{
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;
@@ -107,14 +107,14 @@ $lg: "(min-width: 992px)";
         width: 98vw;
         padding: 10px;
         @media #{$lg}{
-            width: 83vw;
+            width: 95%;
         }
     
     select{
         width: 290px;
         height: 30px;
         @media #{$lg}{
-            width: 980px;
+            width: 70%;
         }
     }
     
@@ -145,6 +145,12 @@ $lg: "(min-width: 992px)";
                 height: 30px;
                 margin: 10px;
             }
+            button:hover{
+                background-color: navy;
+            }
+            button:focus{
+                background-color: royalblue;
+            }
         }
         .cardsNone{
             display: flex;
@@ -160,6 +166,12 @@ $lg: "(min-width: 992px)";
                 width: 80px;
                 height: 30px;
                 margin: 10px;
+            }
+            button:hover{
+                background-color: navy;
+            }
+            button:focus{
+                background-color: royalblue;
             }
             @media #{$lg}{
                 display: flex;
